@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d70a2;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size: 40px;
+}
+
+header {
+    background-color: #173753;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 20px;
+    border-radius: 1rem;
+    color: white;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.outer_calculator {
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.calculator {
+    background-color: #173753;
+    width: 40%;
+    height: auto;
+    border-radius: 1rem;
+    min-width: 200px;
+}
+
+.cals {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.cals p, h2{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.cals p {
+    opacity: 0.8;
+}
+
+.cals h2{
+    font-size: 30px;
+
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.row1> *, 
+.row2> *,
+.row3> *,
+.row4> *,
+.row5> *{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #6DAEDB;
+    border-radius: 0.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.row1>*:hover,
+.row2>*:hover,
+.row3>*:hover,
+.row4>*:hover,
+.row5>*:hover {
+    background-color: black;
+    color: #6DAEDB;
+}
+
+.row5 .op {
+    flex-grow: 3;
+}
+
+.pressed {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #4A9AC7;
+}
+
